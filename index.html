@@ -22,7 +22,7 @@
             position: absolute;
     left: 10px;
     top: 10px;
-    display: flex;
+    !display: flex;
     width: 1000px;
     flex-flow: wrap;
         }
@@ -35,7 +35,7 @@
 </head>
 <body>
     <div class='pixel_overlay' ></div>
-    <img src="portland.jpg">
+    <img src="https://raw.githubusercontent.com/SuperGiantKiller/rplace/main/portland.jpg">
     <script>
         for (i=1;i<=29;i++){
             const currentRow=document.createElement("div");
@@ -43,7 +43,7 @@
             for (j=1;j<=25;j++){
             const currentDiv = document.createElement("div");
             currentDiv.className= 'pixel';
-            currentDiv.setAttribute("aria-label",(1750+j)+","+(40+i));
+            currentDiv.setAttribute("aria-label",(1769+j)+","+(645+i));
             currentDiv.setAttribute("data-microtip-position","bottom");
             currentDiv.setAttribute("role","tooltip");
            currentRow.append(currentDiv);
